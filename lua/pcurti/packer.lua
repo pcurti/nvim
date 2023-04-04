@@ -16,7 +16,8 @@ return require('packer').startup(function(use)
   }
 
   --colorscheme
-  use({ 'rose-pine/neovim', as = 'rose-pine' })
+  use 'rebelot/kanagawa.nvim'
+
   --TreeSitter and TreeSitter playground
   use ('nvim-treesitter/nvim-treesitter', { run = ':TSUpdate' })
   use 'nvim-treesitter/playground'
