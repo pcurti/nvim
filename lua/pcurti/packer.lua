@@ -16,8 +16,17 @@ return require('packer').startup(function(use)
   }
 
   --colorscheme
-use 'shoukoo/mei.nvim'
+  use 'shoukoo/mei.nvim'
 
-  --TreeSitter
+  --TreeSitter and TreeSitter playground
   use ('nvim-treesitter/nvim-treesitter', { run = ':TSUpdate' })
+  use 'nvim-treesitter/playground'
+
+  --harpoon
+  use 'nvim-lua/plenary.nvim' --" don't forget to add this one if you don't have it yet!
+  use 'ThePrimeagen/harpoon'
+  --undotree
+  use 'mbbill/undotree'
+
+  use 'tpope/vim-fugitive'
 end)
